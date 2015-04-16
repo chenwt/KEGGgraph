@@ -1,0 +1,40 @@
+import(methods)
+
+importFrom(XML, "xmlAttrs", "xmlChildren", "xmlName", "xmlRoot", "xmlTreeParse")
+
+importFrom(graph, "edges", "nodes<-", "nodes", "edgeData")
+
+exportPattern("^[^\\.]")
+exportMethods("getDisplayName",
+              "getEntryID",
+              "getKEGGID",
+              "getKEGGgeneLink",
+              "getType",
+              "getName",
+              "getSubtype",
+              "getValue",
+              "getTitle",
+              "getComponent",
+              "getPathwayInfo",
+              "getReactions",
+              "getKEGGgeneLink",
+              "subtypeDisplay",
+              "getSubstrate",
+              "getProduct",
+              "show",
+              "nodes",
+              "edges",
+              "nodes<-"
+)
+exportClasses("KEGGEdge",
+              "KEGGGroup",
+              "KEGGNode",
+              "KEGGPathwayInfo",
+              "KEGGReaction",
+              "KEGGEdgeSubType",
+              "KEGGGraphics",
+              "KEGGPathway",
+              "KEGGPathwayInfo"
+)
+
+#export("KEGGEdgeSubtype")
